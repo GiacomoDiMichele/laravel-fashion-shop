@@ -5,6 +5,14 @@
         <title>Dresses</title>
     </head>
     <body>
-        <h1>{{ $prova }}</h1>
+        <div class="dresses-container">
+            <ul class="">
+                @foreach ($all_dresses as $dress)
+                    <li>{{ $dress->colore }}</li>
+                    <li>{{ $dress->taglia }}</li>
+                    <li>{{ $dress->sesso }}</li>
+                @endforeach
+            </ul>
+        </div>
     </body>
 </html>

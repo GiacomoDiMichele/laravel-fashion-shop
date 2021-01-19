@@ -14,7 +14,7 @@ class HomeController extends Controller
         dd($all_dresses);
 
         $data = [
-            'prova' => 'ueee'
+            'prova' => 'test2'
         ];
 
         return view('home', $data);
