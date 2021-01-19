@@ -7,7 +7,7 @@
     <body>
         <div class="dresses-container">
             <ul class="">
-                @foreach ($all_dresses as $dress)
+                @foreach ($dresses as $dress)
                     <li>{{ $dress->colore }}</li>
                     <li>{{ $dress->taglia }}</li>
                     <li>{{ $dress->sesso }}</li>

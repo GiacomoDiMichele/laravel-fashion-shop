@@ -11,10 +11,9 @@ class HomeController extends Controller
 {
     public function index() {
         $all_dresses = Dress::all();
-        dd($all_dresses);
 
         $data = [
-            'prova' => 'test2'
+            'dresses' => $all_dresses
         ];
 
         return view('home', $data);
